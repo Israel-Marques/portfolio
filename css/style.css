@@ -1,0 +1,126 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Inter, sans-serif;
+    font-weight:bold;
+    Size:18px;
+    Line-Height:30px;
+
+}
+body{
+    color: rgb(19, 19, 19); 
+    background-repeat: no-repeat;
+    background-color: white;
+}
+.first-section{
+    color:rgb(241, 234, 234);
+    background-image: url(../imagens/montanhas.png) !important;
+    box-sizing: none !important;
+}
+
+#minha-foto {
+    width: 14rem;
+    height: 13.5rem;
+    border-radius: 20rem;
+}
+
+
+
+.img-carrousel {
+    width: 100vw;
+    height: 80vh;
+}
+
+.teconologias li {
+   margin-top: 0.10rem;
+  list-style :none;
+  text-align: start;
+}
+.posicao-contatos{
+    bottom: 8rem !important; 
+}
+
+.link-contatos{ 
+    text-decoration: none !important;
+    color: rgb(17, 16, 16) !important;
+}
+.link-contatos-footer{ 
+    text-decoration: none !important;
+    color:#fff !important;
+}
+.link-contatos-footer:hover{
+  color: darkgray !important;
+
+}
+ .link-contatos:hover{
+  color: darkgray !important;
+}
+.tamanho-icon{
+    font-size: 2rem;
+    padding-left: 0.50em;;
+}
+
+
+  #focus {
+    position: relative;
+    color:#fff;
+  }
+  #focus:hover{
+      color:rgb(209, 202, 202);
+  }
+  #focus:before {    
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 0.03rem;
+    bottom: 0.5rem;
+    left: 0.41rem;
+    background-color: rgb(245, 240, 240);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+  }
+  
+  #focus:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+/*   .nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  z-index: 10000;
+    background-color: rgb(9, 146, 9);
+  } */
+
+  .projetos{
+      color: rgb(91, 8, 8);
+  }
+
+  .alinhamento{
+    text-align: center;
+    background-color: black;
+    color: white;
+    position: absolute;
+  }
+  img-tamanho{
+    width: 20rem;
+    height: 15rem;
+  }
+
+
+  @media (max-width: 750px) {
+   .responsivo-btn-center {
+     justify-content: center !important;
+     align-items: center !important;
+   }
+
+    .responsivo-espacamente-left{
+      display: none !important;
+    }
+
+   }
