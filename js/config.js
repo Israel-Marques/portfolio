@@ -15,13 +15,19 @@ for (i = 0; i < coll.length; i++) {
 
 
 
-/*Deixando a nav bar fixa
- $(window).scroll(function () {
+
+ /* $(window).scroll(function () {
   var scroll = $(window).scrollTop();
-  if (scroll > 5) {
-    var header = $("#header").addClass("nav");
+  if (scroll < 20) {
+    var header = $("#imagem-fixada")
+    header.toggleClass("nav");
   } else {
-    $("#header").removeClass("nav");
+    header.toggleClass("nav");
   }
 });
+
  */
+
+
+
+
