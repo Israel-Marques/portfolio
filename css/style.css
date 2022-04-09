@@ -116,6 +116,7 @@ display: none;
 }
 
 .img-tec{
+  box-shadow:  3px 3px 10px 1px  rgb(137, 133, 133);
 width:15rem;
 background-color: rgb(241, 235, 235);
 margin-top: 20px;
