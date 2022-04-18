@@ -89,6 +89,8 @@ h2{
   -webkit-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
 }
+.posicao{
+  margin-left: 10px !important;}
 
 #focus:hover:before {
   visibility: visible;
@@ -117,11 +119,11 @@ display: none;
 
 .img-tec{
   box-shadow:  3px 3px 10px 1px  rgb(137, 133, 133);
-width:15rem;
+width:8rem;
 background-color: rgb(241, 235, 235);
 margin-top: 20px;
 margin-right: 20px;
-border-radius: 15px;
+border-radius: 10px;
 }
 .contato-fixed{
   font-weight: bolder;
@@ -160,5 +162,19 @@ line-height: 2px;
   }
   .item-responsivo{
     display:none;
+  }
+}
+
+@media (max-width: 420px){
+  .posicao{
+    margin-left: 0px;
+
+  }
+  .img-responsiva{
+    width:6.5rem;
+
+  }
+  .apresentacao-responsiva{
+    width:80% !important;
   }
 }
