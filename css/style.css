@@ -1,10 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 * {
-  margin: 0%;
-  padding: 0%;
-  font-family: Inter, sans-serif;
-  font-weight: bold;
-  size: 18px;
-  line-height: 30px;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -12,9 +11,41 @@ body {
   background-repeat: no-repeat;
   background-color: white;
 }
+
+.containers {
+  width: 100vw !important;
+  margin-bottom: 3rem;
+  padding: 5rem;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 2rem;
+  font-weight: bolder;
+}
+.btn-pricipal{
+  text-decoration: none;
+  margin-bottom: 3rem;
+  border: 2px solid #fff;
+  padding: 13px 26px;
+  color: #fff;
+  margin-left: 0.9rem;
+}
+.btn-pricipal:hover{
+  transition: 0.5s ease;
+  color: #000;
+  background-color: #fff;
+}
+
+.apresentacao{
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
 .first-section {
   color: rgb(241, 234, 234);
-  background-image: url(../imagens/montanhas.png) !important;
+  /*   background-image: url(../imagens/montanhas.png) !important;
+ */
   background-repeat: no-repeat;
   box-sizing: none !important;
   background-position: 30% 45%;
@@ -25,7 +56,14 @@ body {
   -o-background-size: cover;
   width: 100vw;
 }
-
+.conateiner-foto {
+  width: 40%;
+  max-width:500px
+}
+.minha-info {
+  width: 58%;
+  max-width: 700px;
+}
 #minha-foto {
   width: 14rem;
   height: 13.5rem;
@@ -37,21 +75,18 @@ body {
   height: 80vh;
 }
 
-h2{
-  font-weight:bolder;
+h2 {
+  font-weight: bolder;
 }
 .teconologias li {
   margin-top: 0.1rem;
   list-style: none;
   text-align: start;
 }
-.posicao-contatos {
-  bottom: 8rem !important;
-}
 
 .link-contatos {
   text-decoration: none !important;
-  color: rgb(17, 16, 16) !important;
+  color: #fff !important;
 }
 .link-contatos-footer {
   text-decoration: none !important;
@@ -64,7 +99,7 @@ h2{
   color: darkgray !important;
 }
 .tamanho-icon {
-  font-size: 2rem;
+  font-size: 1.6rem;
   padding-left: 0.5em;
 }
 
@@ -89,8 +124,6 @@ h2{
   -webkit-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
 }
-.posicao{
-  margin-left: 10px !important;}
 
 #focus:hover:before {
   visibility: visible;
@@ -103,7 +136,8 @@ display: none;
   } */
 
 .projetos {
-  color: rgb(91, 8, 8);
+  background-color: #000;
+  color: #fff;
 }
 
 .alinhamento {
@@ -117,64 +151,152 @@ display: none;
   height: 15rem;
 }
 
-.img-tec{
-  box-shadow:  3px 3px 10px 1px  rgb(137, 133, 133);
-width:8rem;
-background-color: rgb(241, 235, 235);
-margin-top: 20px;
-margin-right: 20px;
-border-radius: 10px;
+.img-tec {
+  box-shadow: 3px 3px 10px 1px rgb(137, 133, 133);
+  width: 8rem;
+  background-color: rgb(241, 235, 235);
+  margin-top: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
 }
-.contato-fixed{
-  font-weight: bolder;
-  font-size: 20px;
+.contato-fixed {
   width: 65px;
-  height: 65px;;
-  background-color: rgb(221, 210, 210);
-  color:black;
+  height: 65px;
   position: fixed;
- right:4px;
- bottom: 25%;
- border-radius:50%;
-line-height: 2px;
+  right: 4px;
+  bottom: 25%;
 }
-.contato-fixed:hover{
-  background-color: darkgrey;
+.contato-fixed:hover {
+  
 }
-.imagem-whatsap{
-  width:50px
+.imagem-whatsap {
+  width: 50px;
+}
+
+/* div que irá mostrar a imagem, dentro dela terá a imagem e o conteúdo oculto*/
+
+.caixaImg {
+  position: relative;
+  width: 300px;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+/* deixar a imagem do tamanho da div*/
+.imagem {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*conteudo oculto*/
+.sobreposicao {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(10, 10, 10, 0.8);
+}
+.caixaImg:hover .sobreposicao {
+  opacity: 1;
+}
+
+.texto {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container-projetos {
+  display: inline-flex;
+  width: 19rem;
+  height: 19rem;
+}
+
+.link-projeto {
+  background-color: #fff;
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+}
+
+.link-projeto:hover {
+  transition: 0.5s ease;
+  text-decoration: none;
+  color: inherit;
+  text-decoration: none;
+  color: #fff;
+  background-color: #777;
 }
 
 @media (max-width: 750px) {
+  .apresentacao-responsiva{
+  display:block;
+  }
+  h1 {
+    font-size: 36px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-weight: bolder;
+  }
   .responsivo-btn-center {
     justify-content: center !important;
     align-items: center !important;
   }
 
+  .conateiner-foto {
+    display:flex;
+    justify-content: center;
+    width: 95%;
+    max-width:500px
+  }
+  .minha-info {
+    width: 95%;
+    max-width: 700px;
+  }
   .responsivo-espacamente-left {
     display: none !important;
   }
   .responsivo-tecnologias {
     padding-left: 0px !important;
   }
-  .row-responsivo {
-    justify-content: space-around !important;
-  }
-  .item-responsivo{
-    display:none;
+
+  .item-responsivo {
+    display: none;
   }
 }
 
-@media (max-width: 420px){
-  .posicao{
+@media (max-width: 420px) {
+
+  .container-projetos {
+    display: inline-flex;
+    width: 10rem;
+    height: 10rem;
+  }
+  .containers {
+    width: 100vw !important;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+  }
+  
+  .posicao {
     margin-left: 0px;
-
   }
-  .img-responsiva{
-    width:6.5rem;
-
+  .img-responsiva {
+    width: 6.5rem;
   }
-  .apresentacao-responsiva{
-    width:80% !important;
+  .apresentacao-responsiva {
+    width: 80% !important;
   }
 }
