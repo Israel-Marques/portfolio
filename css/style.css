@@ -281,13 +281,24 @@ display: none;
 
   .container-projetos {
     display: inline-flex;
-    width: 10rem;
-    height: 10rem;
+    width: 12rem;
+    height: 12rem;
+    margin-bottom: 0.5rem;
   }
   .containers {
     width: 100vw !important;
     margin-bottom: 2rem;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .texto p{
+    font-size:10px ;
+    line-height: auto;
+  }
+
+  .texto h2{
+    font-size:1rem ;
+    
   }
   
   .posicao {
