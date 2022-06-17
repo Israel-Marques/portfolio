@@ -37,6 +37,9 @@ h1 {
   background-color: #fff;
 }
 
+#cor{
+  background-color:#fff;
+}
 .apresentacao{
   flex-direction: row;
   display: flex;
